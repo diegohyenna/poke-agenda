@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div>
+  <ul>
+    <li *ngFor="let pokemon of pokemons">
+      <p><strong>Numero</strong> {{ pokemon.number }}</p>
+      <p><strong>Nome</strong> {{ pokemon.name }}</p>
+      <img [src]="pokemon.image" width="300px" />
+    </li>
+  </ul>
+</div>
+<app-footer></app-footer>
